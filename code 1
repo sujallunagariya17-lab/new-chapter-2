@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char name[]="sujal";
+    char name1[5];
+
+    for(int i=0;i<6;i++)
+    printf("%c\n",name[i]);
+
+    name[3]='o';
+    for(int i=0;i<6;i++)
+
+    printf("%c\n",name[i]);
+
+    printf("%d\n",strlen(name));
+    strcpy(name1,name);
+    for(int i=0;i<6;i++)
+    printf("%c\n",name1[i]);
+
+
+
+    strupr(name1);
+    for(int i=0; i<6; i++)
+    printf("%c\n",name1[i]);
+    printf("%d",strcmp(name,name1));
+
+}
